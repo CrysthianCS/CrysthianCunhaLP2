@@ -1,0 +1,32 @@
+Uma empresa precisa modelar um conjunto de classes para representar seus funcionários no sitema de RH.
+Sabe-se que a empresa deseja armazenar em um banco de dados as seguintes informações:
+
+Todo trabalhador da empresa deve ter Nome, CPF, Data de nascimento, salario e matricula.
+No caso dos gerentes, é preciso saber também qual área ele gerencia e qual é o valor que ele ganha como 
+adicional do cargo.
+
+O sistema também conterá os registros de funcionários terceirizados, para fins de segurança de acesso 
+às dependências da empresa. No entanto, esses funcionários não são pagos diretamente pela empresa, e dessa 
+forma, o sistema não armazena seu salário.
+
+Para todo gerente, deve ser possivel descobrir seu salário total.
+Para funcionários terceirizados, deve-se guardar o CNPJ da empresa dele.
+
+1) Modele as classes pertinentes para resolver o problema como proposto, lembrando-se das regras de 
+encapsulamento e de nomeção de atributos e métodos. Não use herança. Salve esta versão do código antes 
+de começar o próximo exercício.
+
+2) Através da herança, remodele as suas classes, em uma hierarquia que faça sentido para organizar os dados 
+do problema, e evite repetições desnecessárias no código.
+
+3) Considere que agora a empresa passará a pagar vale-alimentação para seus funcionários (excluindo os 
+terceirizados). Esse benefício será no valor de 8% do salário, ou o valor maximo de R$ 750,00, caso a porcentagem 
+o extrapole. Programe esta alteração do sistema.
+
+4) Considere que esta alíquota será diferente para os diferentes tipos de empregado: 8% para funcionários em geral, 
+6,5% para gerentes, em cima do salario TOTAL. Altere suas classes, utilizando o override para redefinir o calculo 
+onde necessário.
+
+EXERCICIO (12) Crie uma ConsoleApplication que leia todas as informações de vários funcionários dos diferentes 
+(construa a parte de leitura de dados como você achar mais conveniente). A partir dos funcionários lidos, calcule 
+a folha de pagamento da empresa, considerando salários, adicionais e vale-alimentação.
