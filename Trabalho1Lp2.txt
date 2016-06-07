@@ -1,0 +1,62 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    public class Triangulo
+    {
+        private int lado1;
+
+        public int Lado1
+        {
+            get { return lado1; }
+            set 
+            {
+                if (value >= 0)
+                    lado1 = value;
+            }
+        }
+        private int lado2;
+
+        public int Lado2
+        {
+            get { return lado2; }
+            {
+                if (value >= 0)
+                    lado2 = value;
+            }
+        }
+        private int lado3;
+
+        public int Lado3
+        {
+            get { return lado3; }
+              {
+                if (value >= 0)
+                    lado3 = value;
+              }
+        }
+        public string Cor { get; set; }
+        public int PosicX { get; set; }
+        public int PosicY { get; set; }
+        public Triangulo (int Lado1 , int Lado2 , int Lado3)
+    {
+            if (Lado1 >=0)
+            {
+                this.lado1 = Lado1;
+            }
+            if (Lado2 >= 0)
+            {
+                this.lado2 = Lado2;
+            }
+            if (Lado3 >= 0)
+            {
+                this.lado3 = Lado3;
+            }
+    }
+
+    }
+}
